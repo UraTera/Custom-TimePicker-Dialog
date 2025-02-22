@@ -2,11 +2,9 @@ package com.tera.custom_timepicker_dialog
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.graphics.Color
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.tera.custom_timepicker_dialog.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -49,11 +47,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openDialog(){
+        val font = resources.getFont(R.font.led_bold)
         val dialog = TimeDialog(this)
         dialog.hour = myHour
         dialog.min = myMin
         dialog.sec = mySec
         dialog.maxHours = 23
+        dialog.textColorSel = Color.BLUE
+        dialog.fontFamily = font
         dialog.setOnChangeListener { hour, min, sec ->
             myHour = hour
             myMin = min
