@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TimePicker-Dialog</string>
+
+    <string name="get_time">Получить время</string>
+    <string name="h">ч</string>
+    <string name="m">м</string>
+    <string name="s">с</string>
+
+</resources>
