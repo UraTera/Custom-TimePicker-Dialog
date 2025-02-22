@@ -2,7 +2,8 @@
 
 Using AlertDialog greatly simplifies the code compared to DialogFragment.
 
-![TimeDialog](https://github.com/user-attachments/assets/4460e37d-ca26-496f-9949-4dd8d4d7b7ac)
+![TimeDialog](https://github.com/user-attachments/assets/e464a74f-ee20-4fc6-9aa1-33616c250957)
+
 
 The libs folder contains the compiled TimeDialog.aar library.
 
