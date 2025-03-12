@@ -56,6 +56,7 @@ class TimeDialog(context: Context) {
             mDialog?.dismiss()
         }
 
+        setSize(context)
         setParams()
         initListener()
         setTime()
@@ -63,6 +64,18 @@ class TimeDialog(context: Context) {
         mDialog?.setCancelable(false)
         mDialog?.setView(view)
         mDialog?.show()
+    }
+
+    private fun setSize(context: Context) {
+        val screen = context.resources.displayMetrics
+        val wS = screen.widthPixels
+        val hS = screen.heightPixels
+
+        if (wS > hS) { // Landscape
+            pickerH.showRows5 = false
+            pickerM.showRows5 = false
+            pickerS.showRows5 = false
+        }
     }
 
     // Слушатели
