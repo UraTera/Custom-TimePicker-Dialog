@@ -8,7 +8,7 @@ To use the ready-made library, add the dependency:
 ```
 dependencies {
 
-    implementation("io.github.uratera:time_dialog:1.0.0")
+    implementation("io.github.uratera:time_dialog:1.0.1")
 }
 ```
 ### Methods
