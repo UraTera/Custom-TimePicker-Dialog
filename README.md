@@ -4,14 +4,13 @@ Using AlertDialog greatly simplifies the code compared to DialogFragment.
 
 ![TimeDialog](https://github.com/user-attachments/assets/e464a74f-ee20-4fc6-9aa1-33616c250957)
 
-
-The libs folder contains the compiled TimeDialog.aar library.
-
-Dependencies:
+To use the ready-made library, add the dependency:
 ```
-implementation(files("libs/TimeDialog.aar"))
-```
+dependencies {
 
+    implementation("io.github.uratera:time_dialog:1.0.0")
+}
+```
 ### Methods
 
 |Methods              |Description           |Default value|
